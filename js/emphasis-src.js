@@ -521,7 +521,7 @@ var Emphasis = {
     }
 
 };
-
+window.boo = Emphasis.init();  
 $(window).bind('load', function() {
   Emphasis.init();  
 });
