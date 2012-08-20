@@ -48,7 +48,8 @@ var Emphasis = {
         this.addCSS();
         this.readHash();
         
-        $(document).bind('keydown', this.keydown);                
+        $(document).bind('keydown', this.keydown); 
+        alert('init');
     },
 
     config: function() {
@@ -160,6 +161,7 @@ var Emphasis = {
         
         self.kh  = self.kh + kc + '|';
         if (self.kh.indexOf('|16|16|')>-1) {
+            alert('double shift');
             self.vu = (self.vu) ? false : true;
             self.paragraphInfo(self.vu);
         }
